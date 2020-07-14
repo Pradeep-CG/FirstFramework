@@ -12,4 +12,5 @@ public struct Common {
     
     public static let shared = Common()
     public var name = "Pradeep Sagar"
+    var age = "34"
 }
