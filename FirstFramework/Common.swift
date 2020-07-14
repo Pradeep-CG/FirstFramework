@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Common {
+public struct Common {
     
-    static let shared = Common()
-    var name = "Pradeep Sagar"
+    public static let shared = Common()
+    public var name = "Pradeep Sagar"
 }
