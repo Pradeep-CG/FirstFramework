@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2750EA5B24BDF55C00FCEAD6 /* FirstFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2750EA5924BDF55C00FCEAD6 /* FirstFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2750EA6224BDF57400FCEAD6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750EA6124BDF57400FCEAD6 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2750EA5624BDF55C00FCEAD6 /* FirstFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750EA5924BDF55C00FCEAD6 /* FirstFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstFramework.h; sourceTree = "<group>"; };
 		2750EA5A24BDF55C00FCEAD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2750EA6124BDF57400FCEAD6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				2750EA5924BDF55C00FCEAD6 /* FirstFramework.h */,
 				2750EA5A24BDF55C00FCEAD6 /* Info.plist */,
+				2750EA6124BDF57400FCEAD6 /* Common.swift */,
 			);
 			path = FirstFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					2750EA5524BDF55C00FCEAD6 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2750EA6224BDF57400FCEAD6 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		2750EA5F24BDF55C00FCEAD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6BF9ZGVZZA;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Home.FirstFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		2750EA6024BDF55C00FCEAD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6BF9ZGVZZA;
